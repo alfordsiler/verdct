@@ -379,7 +379,7 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 
 }
 .idea-idea {
-  padding-top: 50px;
+  padding: 50px;
   font-size: 72px;
   text-align: center;
   color: 
@@ -488,14 +488,14 @@ to { -webkit-transform: rotateY(2160deg); -moz-transform: rotateY(2160deg); tran
 
 /*poll*/
 .poll-box {
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	border: solid black 1px;
 	margin: 20px;
 }
 .poll-box-left {
-	background-color: blue;
+	background-color: rgb(84, 195, 188);
 }
 .poll-box-right {
-	background-color: red;
+	background-color: rgb(147, 195, 84)
 }
