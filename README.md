@@ -1,3 +1,3 @@
 ## Verdct
 
-# Having trouble making a decision? Use this awesome deicion maker and idea generator!
+# Having trouble making a decision? Use this awesome decision maker and idea generator!
