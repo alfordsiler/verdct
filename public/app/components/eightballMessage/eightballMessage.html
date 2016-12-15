@@ -1,43 +1,26 @@
 <style>
-/*	.shake-container {
-		width: 50px;
-		height: 50px;
-		background-color: blue;
-	}*/
-
 	.eightball-screen1 {
 		width: 0;
 		height: 0;
-		/*border-left: 75px solid transparent;*/
-		/*border-right: 75px solid transparent;*/
-		/*border-bottom: 150px solid #000080;*/
-		/*background-color: #000080;*/
-	    margin-left: 18px;
-	    margin-top: 5px;
+    margin-left: 18px;
+    margin-top: 5px;
 	}
-
 	.ring {
 	    width: 204px;
 	    height: 204px;
-	    /*border-radius: 108px;*/
-	    /*border: 4px solid #222;*/
 	    display: flex;
 	    align-self: center;
 	    align-items: center;
 	}
-
 	.inner-ring {
 	    width: 196px;
 	    height: 196px;
 	    border-radius: 102px;
-	    /*border: 6px solid #777;*/
 	    display: flex;
 	    align-self: center;
 	    position: relative;
 	    z-index: 1;
-	    /*background-color: #191919;*/
 	}
-
 	#message1 {
 	    text-align: center;
 	    color: white;
@@ -47,7 +30,6 @@
 	    max-width: 85px;
 	    z-index: 1;
 	}
-
 	.eightball-message2 {
 		text-align: center; 
 		margin-top: 110px; 
@@ -55,14 +37,11 @@
 		font-size: 18px;
 		padding: 10px;
 	}
-
-
 	.message-container1 {
 		width: 100px;
     	margin-left: -50px;
     	text-align: center;
 	}
-
 	.eightball-ball1 {
 	display: flex;
     justify-content: center;
@@ -73,7 +52,6 @@
     background-size: contain;
     margin: 0 auto;
 	}
-
 </style>
 
 <div class="page-container">
@@ -85,19 +63,8 @@
 		<h2 style="text-align: center;">Ask the eightball!</h2>
 		<div class=eightball-button ng-click="eightballmsg.shakeIt()" style="margin: 0 auto 20px auto;">SHAKE</div>
 
-		<!-- <div class="eightball-ball" id="eightball">
-			<div class="eightball-screen">
-				<div ng-if="eightballmsg.shaking" class="shake-container"></div>	
-				<div ng-if="!eightballmsg.shaking" class="eightball-message-container">
-					<div ng-if="!eightballmsg.shaking" class="eightball-message">
-						<div>{{eightballmsg.randommsg}}</div>
-					</div>
-				</div>
-			</div>
-		</div> -->
-
 		<div class="eightball-ball1" id="eightball">
-			<div id="message1" class="eightball-message1">	
+			<div id="message1" class="eightball-message1">
 				{{eightballmsg.randommsg}}
 			</div>
 		</div>

@@ -8,7 +8,7 @@ var Wordnik = require('wordnik-bb').init(APIKEY);
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-mongoose.connect('mongodb://localhost/verdict');
+mongoose.connect('mongodb://localhost/eightball');
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
@@ -31,7 +31,6 @@ io.on('connection', function(socket) {
   socket.on('disconnect', function(){
     console.log('user disconnected');
   });
-
 
   socket.on('right-vote', function(msg) {
     console.log("got right vote");

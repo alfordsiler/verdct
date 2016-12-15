@@ -13,10 +13,9 @@
     EightballService.getAllEightballs(function(data) {
       eightballmsg.eightballs = data.data;
 
-      var randomIndex = Math.floor((Math.random() * 5));
-      eightballmsg.randommsg = data.data[randomIndex].content;
+      var randomIndex = Math.floor((Math.random() * 29));
+      eightballmsg.randommsg = data.data[randomIndex].message;
     });
-
 
     eightballmsg.shakeIt = function() {
       var eightballmsg = this;
@@ -25,29 +24,18 @@
       EightballService.getAllEightballs(function(data) {
         eightballmsg.eightballs = data.data;
 
-        var randomIndex = Math.floor((Math.random() * 18));
-        eightballmsg.randommsg = data.data[randomIndex].content;
+        var randomIndex = Math.floor((Math.random() * 29));
+        eightballmsg.randommsg = data.data[randomIndex].message;
       });
-
-
 
         $('#message1').css("z-index", -1);
         $('#eightball').effect("shake");
-        //shakeWait();
-        console.log('shaking?', eightballmsg.shaking);
         setTimeout(function() {
           eightballmsg.shaking = false;
           $('#message1').css("z-index", 1);
-          console.log('timeout: ', eightballmsg.shaking);
         }, 1000);
     }
-
-
-
-
-
   }
-
 
   EightballMessage.$inject = ['EightballService'];
 })()

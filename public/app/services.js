@@ -6,8 +6,6 @@ angular.module('VerdictApp')
         url: '/api/eightballs',
         method: 'GET'
       }).then(function success(res) {
-        console.log('got eightballs');
-        console.log(res.data);
         callback(res);
       }, function error(res) {
         console.log(res);
