@@ -8,7 +8,7 @@ var Wordnik = require('wordnik-bb').init(APIKEY);
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 
-mongoose.connect('mongodb://localhost/eightball');
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/eightball');
 
 app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json());
